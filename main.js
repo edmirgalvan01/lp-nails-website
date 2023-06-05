@@ -17,7 +17,34 @@ const SERVICES = [
   },
 ];
 
-const createService = () => {
+const PRICES = [
+  {
+    title: "Uñas de acrilico",
+    price: "150.00",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam sapiente harum in dolores ad quia molestias laborum dignissimos.",
+  },
+  {
+    title: "Uñas de gel",
+    price: "200.00",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam sapiente harum in dolores ad quia molestias laborum dignissimos.",
+  },
+  {
+    title: "Manicura basica",
+    price: "200.00",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam sapiente harum in dolores ad quia molestias laborum dignissimos.",
+  },
+  {
+    title: "Manicura francesa",
+    price: "250.00",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam sapiente harum in dolores ad quia molestias laborum dignissimos.",
+  },
+];
+
+const createServices = () => {
   SERVICES.map((service) => {
     const homeSlider = document.getElementById("homeSlider");
     const article = document.createElement("article");
@@ -34,4 +61,32 @@ const createService = () => {
   });
 };
 
-createService();
+const createPrices = () => {
+  PRICES.map((price) => {
+    const pricesList = document.getElementById("pricesList");
+    const article = document.createElement("article");
+    const h3 = document.createElement("h3");
+    const h2 = document.createElement("h2");
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+
+    article.classList.add("prices--list__item");
+
+    h3.innerHTML = price.title;
+    h2.innerHTML = price.price;
+    p.innerHTML = price.description;
+    a.innerHTML = "Reservar";
+
+    a.setAttribute("href", "#reserve");
+
+    article.appendChild(h3);
+    article.appendChild(h2);
+    article.appendChild(p);
+    article.appendChild(a);
+
+    pricesList.appendChild(article);
+  });
+};
+
+createServices();
+createPrices();
