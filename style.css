@@ -154,10 +154,8 @@ html {
   font-size: 1rem;
   color: var(--color-pink);
 }
-.testimonials--list__item .stars {
-  display: flex;
-  gap: 5px;
-  align-items: center;
+.testimonials--list__item h4 {
+  color: var(--color-soft-pink);
 }
 .testimonials--list__item > p {
   font-family: "Poppins", sans-serif;

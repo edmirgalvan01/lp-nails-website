@@ -44,6 +44,27 @@ const PRICES = [
   },
 ];
 
+const TESTIMONIALS = [
+  {
+    name: "Eleanor Pena",
+    stars: 7,
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae placeat dolorem officia quia totam reprehenderit sequi possimus sit vitae, nostrum, nemo impedit non itaque enim obcaecati voluptates!",
+  },
+  {
+    name: "Michell Ross",
+    stars: 9,
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae placeat dolorem officia quia totam reprehenderit sequi possimus sit vitae, nostrum, nemo impedit non itaque enim obcaecati voluptates!",
+  },
+  {
+    name: "Jessica Pearson",
+    stars: 10,
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae placeat dolorem officia quia totam reprehenderit sequi possimus sit vitae, nostrum, nemo impedit non itaque enim obcaecati voluptates!",
+  },
+];
+
 const createServices = () => {
   SERVICES.map((service) => {
     const homeSlider = document.getElementById("homeSlider");
@@ -88,5 +109,28 @@ const createPrices = () => {
   });
 };
 
+createTestimonails = () => {
+  TESTIMONIALS.map((testimonial) => {
+    const testimonialsList = document.getElementById("testimonialsList");
+    const article = document.createElement("article");
+    const h3 = document.createElement("h3");
+    const h4 = document.createElement("h4");
+    const p = document.createElement("p");
+
+    article.classList.add("testimonials--list__item");
+
+    h3.innerHTML = testimonial.name;
+    h4.innerHTML = `${testimonial.stars}/5`;
+    p.innerHTML = testimonial.content;
+
+    article.appendChild(h3);
+    article.appendChild(h4);
+    article.appendChild(p);
+
+    testimonialsList.appendChild(article);
+  });
+};
+
 createServices();
 createPrices();
+createTestimonails();
