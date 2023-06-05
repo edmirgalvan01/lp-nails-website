@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 16px;
+  background-color: var(--color-hard-purple);
+}
+:root {
+  --color-hard-purple: #2a2f4f;
+  --color-purple: #917fb3;
+  --color-pink: #e5beec;
+  --color-soft-pink: #fde2f3;
+}
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+.title {
+  background: linear-gradient(270deg, #917fb3 0%, #e5beec 52.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
