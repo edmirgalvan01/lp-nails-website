@@ -125,11 +125,44 @@
           </article>
         </div>
       </section>
-      <section class="contact container mh-100" id="contact">
+      <section class="contact container" id="contact">
         <h1 class="linear-color">Dónde puedes encontrarnos</h1>
+        <div class="contact--list">
+          <p>alma.lawson@example.com</p>
+          <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+          <p>(702) 555-0122</p>
+          <div class="social-media">
+            <img src="./assets/instagram.svg" />
+            <img src="./assets/facebook.svg" />
+            <img src="./assets/youtube.svg" />
+          </div>
+          <a href="#reserve">Reservar</a>
+        </div>
       </section>
-      <section class="reserve container mh-100" id="reserve">
+      <section class="reserve container" id="reserve">
         <h1 class="linear-color">Agenda tu cita</h1>
+        <form class="reserve--form">
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="field">
+            <label for="interesed">Interesada en</label>
+            <input type="text" id="interesed" name="interesed" />
+          </div>
+          <div class="field">
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="field">
+            <label for="specifications">Especificaciones (opcional)</label>
+            <input type="textarea" id="specifications" name="specifications" />
+          </div>
+        </form>
+        <div class="reserve--buttons">
+          <button>Copiar mensaje</button>
+          <a href="#">Mandar mensaje</a>
+        </div>
       </section>
     </main>
   </body>

@@ -163,3 +163,88 @@ html {
   color: var(--color-soft-pink);
 }
 /* TESTIMONIALS */
+
+/* CONTACT */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact--list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact--list > p {
+  color: var(--color-soft-pink);
+}
+.contact--list .social-media {
+  display: flex;
+  gap: 20px;
+}
+.contact--list > a {
+  background-color: var(--color-pink);
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-hard-purple);
+  width: fit-content;
+}
+/* CONTACT */
+.reserve {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reserve--form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reserve--form > .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field > label {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  color: var(--color-pink);
+}
+.field > input {
+  background-color: var(--color-hard-purple);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--color-purple);
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: var(--color-pink);
+}
+.reserve--buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.reserve--buttons > button {
+  background-color: transparent;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+  color: var(--color-pink);
+  border: 2px solid var(--color-pink);
+  font-size: 1rem;
+}
+.reserve--buttons > a {
+  background-color: var(--color-pink);
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-hard-purple);
+  width: fit-content;
+  font-size: 1rem;
+}
