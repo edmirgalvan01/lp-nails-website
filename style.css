@@ -130,3 +130,36 @@ html {
   color: var(--color-hard-purple);
 }
 /* PRICES */
+
+/* TESTIMONIALS */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.testimonials--list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.testimonials--list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.testimonials--list__item > h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-pink);
+}
+.testimonials--list__item .stars {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.testimonials--list__item > p {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-soft-pink);
+}
+/* TESTIMONIALS */
