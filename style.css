@@ -15,7 +15,6 @@ html {
   --color-soft-pink: #fde2f3;
 }
 .container {
-  min-height: 100vh;
   padding: 20px;
   width: 100%;
 }
@@ -24,6 +23,9 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.mh-100 {
+  min-height: 100vh;
 }
 
 /* HOME */
